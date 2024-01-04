@@ -1,0 +1,58 @@
+/* Resetting default styles and setting up base styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Styling the header and footer */
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/* Styling the main sections */
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Creating a responsive layout with flexbox */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.column img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
